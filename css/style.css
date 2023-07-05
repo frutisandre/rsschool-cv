@@ -1,15 +1,113 @@
-@font-face { 
-    font-family: 'Spectral';
-    src: url("assets/fonts/Spectral-Regular")
+body {
+    font-family: 'Frank Ruhl Libre', normal;
+    background-color: rgb(0, 0, 0);
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 0;
 }
 
-@font-face { 
-    font-family: 'Spectral';
-    src: url("assets/fonts/Spectral-Italic")
+
+* {
+    box-sizing: border-box;
 }
 
-@font-face { 
-    font-family: 'Spectral';
-    src: url("assets/fonts/Spectral-Bold")
+
+html {
+    scroll-behavior: smooth; 
 }
 
+header {
+    background: linear-gradient(navy  ,white);
+    padding: 10px;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 20px;
+}
+.nav-list {
+    list-style: none;
+}
+
+.nav-link {
+    padding: 0 20px;
+    line-height: 20px;
+}
+
+.nav-link:hover {
+    transition: .3s;
+}
+
+.nav-item a {
+    color: #ffffff;
+    text-decoration: none;  
+    transition: color 0.5s;
+}
+
+.nav-item a:hover {
+    color: #8a98c4;
+}
+
+.section {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    border-bottom: 1px solid navy;
+}
+
+
+a {
+    text-decoration: none;
+    color: #000000;
+    }
+
+a:hover {
+    color: #d429eb;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.rss {
+    width: 121px;
+    height: 45px;
+    background-image: url(../assets/svg/rs_school_js.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.footer {
+    background: linear-gradient(white  ,navy);
+    padding: 15px;
+}
